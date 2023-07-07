@@ -1,16 +1,3 @@
-# flutter_application_1
-
-A new Flutter project.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+link thiết kế :https://www.figma.com/file/1dNjcksI65BU655OFDHqy3/Allegiant-Login-%2F-Signup-App-Page-Template-(Community)?type=design&node-id=0-1&mode=design&t=yfZEnTHWlH2iKFkv-0
+Mỗi người 1 nhánh riêng,tự clone code từ nhánh main về
+Ko tự up code lên nhánh main,up code lên phải có commit 
