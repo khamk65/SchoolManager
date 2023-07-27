@@ -1,0 +1,64 @@
+name: bat_theme
+description: A flutter project implemention a design system using theme extension.
+version: 0.0.2
+homepage: https://github.com/mastersam07/smarty
+
+environment:
+  sdk: '>=2.19.3 <3.0.0'
+  flutter: ">=1.17.0"
+
+dependencies:
+  firebase_auth: ^4.7.1
+  firebase_core: ^2.15.0
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+
+# For information on the generic Dart part of this file, see the
+# following page: https://dart.dev/tools/pub/pubspec
+
+# The following section is specific to Flutter packages.
+flutter:
+  uses-material-design: true
+  fonts:
+      - family: TT Firs Neue
+        fonts:
+          - asset: packages/bat_theme/fonts/TT Firs Neue/TTFirsNeue-Thin.ttf
+            weight: 100
+          - asset: packages/bat_theme/fonts/TT Firs Neue/TTFirsNeue-ThinItalic.ttf
+            weight: 100
+            style: italic
+          - asset: packages/bat_theme/fonts/TT Firs Neue/TTFirsNeue-ExtraLight.ttf
+            weight: 200
+          - asset: packages/bat_theme/fonts/TT Firs Neue/TTFirsNeue-ExtraLightItalic.ttf
+            weight: 200
+            style: italic
+          - asset: packages/bat_theme/fonts/TT Firs Neue/TTFirsNeue-Light.ttf
+            weight: 300
+          - asset: packages/bat_theme/fonts/TT Firs Neue/TTFirsNeue-LightItalic.ttf
+            weight: 300
+            style: italic
+          - asset: packages/bat_theme/fonts/TT Firs Neue/TTFirsNeue-Regular.ttf
+            weight: 400
+          - asset: packages/bat_theme/fonts/TT Firs Neue/TTFirsNeue-Italic.ttf
+            weight: 400
+            style: italic
+          - asset: packages/bat_theme/fonts/TT Firs Neue/TTFirsNeue-Medium.ttf
+            weight: 500
+          - asset: packages/bat_theme/fonts/TT Firs Neue/TTFirsNeue-MediumItalic.ttf
+            weight: 500
+            style: italic
+          - asset: packages/bat_theme/fonts/TT Firs Neue/TTFirsNeue-Bold.ttf
+            weight: 700
+          - asset: packages/bat_theme/fonts/TT Firs Neue/TTFirsNeue-BoldItalic.ttf
+            weight: 700
+            style: italic
+          - asset: packages/bat_theme/fonts/TT Firs Neue/TTFirsNeue-ExtraBold.ttf
+            weight: 800
+          - asset: packages/bat_theme/fonts/TT Firs Neue/TTFirsNeue-ExtraBoldItalic.ttf
+            weight: 800
+            style: italic

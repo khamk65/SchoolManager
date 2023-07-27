@@ -1,0 +1,66 @@
+workflows:
+  android-flow:
+    name: A demo workflow
+    instance_type: mac_mini_m1
+    max_build_duration: 60
+    environment:
+      groups:
+        - smarty-vars
+      flutter: stable
+      xcode: latest
+      android_signing:
+        - smarty-key
+    cache:
+      cache_paths:
+        - $FLUTTER_ROOT/.pub-cache
+        - $HOME/.gradle/caches
+        - $HOME/Library/Caches/CocoaPods
+    triggering:
+      events:
+        - push
+      branch_patterns:
+        - pattern: 'master'
+          include: true
+          source: true
+      cancel_previous_builds: true
+    scripts:
+    - name: Install Shorebird
+      script: |
+        curl --proto '=https' --tlsv1.2 https://raw.githubusercontent.com/shorebirdtech/install/main/install.sh -sSf | bash -s -- --force
+        install_path=$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.shorebird" || printf %s "${XDG_CONFIG_HOME}/shorebird")
+        echo PATH="$PATH":"$install_path/bin" >> $CM_ENV
+      ignore_failure: false
+    - name: Set up local.properties
+      working_directory: example
+      script: | 
+        echo "flutter.sdk=$HOME/programs/flutter" > "$CM_BUILD_DIR/example/android/local.properties"
+    - name: Get Flutter packages
+      script: | 
+        flutter packages pub get
+    - name: Run Flutter lint and analysis
+      script: | 
+        flutter analyze .
+      ignore_failure: true
+    - name: Run Flutter tests
+      script: | 
+        flutter test
+      ignore_failure: true
+    - name: Shorebird release
+      working_directory: example
+      script: |
+        shorebird build apk
+      ignore_failure: false
+    # - name: Build APK with Flutter
+    #   working_directory: example
+    #   script: | 
+    #     flutter build apk --release
+    #   ignore_failure: false
+    artifacts:
+      - example/build/**/outputs/**/*.apk
+    publishing:
+      email:
+        notify:
+          success: true
+          failure: false
+        recipients:
+          - abadasamuelosp@gmail.com
