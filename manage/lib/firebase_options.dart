@@ -44,42 +44,42 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyDUavrK6J7ou9Z4uN6d3Tc5d3YdMGRrxds',
-    appId: '1:695101733939:web:684010f72b1d5c6b9e7746',
-    databaseURL: 'https://test-c1fe6-default-rtdb.firebaseio.com',
-    messagingSenderId: '695101733939',
-    projectId: 'test-c1fe6',
-    authDomain: 'test-c1fe6.firebaseapp.com',
-    storageBucket: 'test-c1fe6.appspot.com',
-    measurementId: 'G-ZCWBSZ8BE3',
+    apiKey: 'AIzaSyDb9V8Y35Q8KEq4zlEaUTBOFeC9P_WIvwc',
+    appId: '1:88296079020:web:72cc2e13a0c250c7f52909',
+    messagingSenderId: '88296079020',
+    projectId: 'classroom-management-55753',
+    authDomain: 'classroom-management-55753.firebaseapp.com',
+    databaseURL: 'https://classroom-management-55753-default-rtdb.firebaseio.com',
+    storageBucket: 'classroom-management-55753.appspot.com',
+    measurementId: 'G-7C1PD6L1B2',
   );
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyBs-6PCjvVqEXdM6oszQh3WnHQsrzE-EMI',
-    appId: '1:695101733939:android:74283c716938318c9e7746',
-    databaseURL: 'https://test-c1fe6-default-rtdb.firebaseio.com',
-    messagingSenderId: '695101733939',
-    projectId: 'test-c1fe6',
-    storageBucket: 'test-c1fe6.appspot.com',
+    apiKey: 'AIzaSyBHrfKSzOEiQrsHf7bR0yK7VI-X-3zAstQ',
+    appId: '1:88296079020:android:415df77179a207b0f52909',
+    messagingSenderId: '88296079020',
+    projectId: 'classroom-management-55753',
+    databaseURL: 'https://classroom-management-55753-default-rtdb.firebaseio.com',
+    storageBucket: 'classroom-management-55753.appspot.com',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyAuPP8TeyundshUlzbj0sB1VNGRP7lXesg',
-    appId: '1:695101733939:ios:75f62226d6c03d379e7746',
-    databaseURL: 'https://test-c1fe6-default-rtdb.firebaseio.com',
-    messagingSenderId: '695101733939',
-    projectId: 'test-c1fe6',
-    storageBucket: 'test-c1fe6.appspot.com',
+    apiKey: 'AIzaSyANLbMOUXvzNT0ISOEMPzm3azNNEN9pUl0',
+    appId: '1:88296079020:ios:4557a92ee12fdff6f52909',
+    messagingSenderId: '88296079020',
+    projectId: 'classroom-management-55753',
+    databaseURL: 'https://classroom-management-55753-default-rtdb.firebaseio.com',
+    storageBucket: 'classroom-management-55753.appspot.com',
     iosBundleId: 'com.example.manage',
   );
 
   static const FirebaseOptions macos = FirebaseOptions(
-    apiKey: 'AIzaSyAuPP8TeyundshUlzbj0sB1VNGRP7lXesg',
-    appId: '1:695101733939:ios:ba5ef8026fa2ede39e7746',
-    databaseURL: 'https://test-c1fe6-default-rtdb.firebaseio.com',
-    messagingSenderId: '695101733939',
-    projectId: 'test-c1fe6',
-    storageBucket: 'test-c1fe6.appspot.com',
+    apiKey: 'AIzaSyANLbMOUXvzNT0ISOEMPzm3azNNEN9pUl0',
+    appId: '1:88296079020:ios:00fc50fc71684e5ef52909',
+    messagingSenderId: '88296079020',
+    projectId: 'classroom-management-55753',
+    databaseURL: 'https://classroom-management-55753-default-rtdb.firebaseio.com',
+    storageBucket: 'classroom-management-55753.appspot.com',
     iosBundleId: 'com.example.manage.RunnerTests',
   );
 }
